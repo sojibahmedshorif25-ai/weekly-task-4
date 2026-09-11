@@ -164,8 +164,7 @@ var productExceptSelf = function(nums) {
  * @return {ListNode}
  */
 var removeNthFromEnd = function(head, n) {
-    const dummy = new ListNode(0);
-    dummy.next = head;
+    const dummy = { val: 0, next: head };
     
     let fast = dummy;
     let slow = dummy;
